@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
@@ -21,7 +21,7 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="assets/asset.glb"
+                    src="asset.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -29,7 +29,7 @@
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/marker.patt"
+                url="pattern-A1AR15.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
@@ -37,7 +37,7 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="1.0965374192139532 1.0965374192139532 1.0965374192139532"
+                    scale="0.05021690985702745 0.05021690985702745 0.05021690985702745"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     class="clickable"
