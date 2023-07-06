@@ -6,6 +6,7 @@
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+        <script src="./main.js"></script>
     </head>
 
     <body style="margin: 0; overflow: hidden;">
@@ -24,6 +25,8 @@
                     id="animated-asset"
                     src="asset.glb"
                 ></a-asset-item>
+                <audio id="audio01" src="bgm.mp3" preload="auto"></audio>
+			    <img id="img_play" src="img_play.png"></img>
             </a-assets>
 
             <a-marker
@@ -47,6 +50,10 @@
             </a-marker>
 
             <a-entity camera></a-entity>
+            
+        <a-sound id="my_sound01" src="#audio01" position="4 0.2 -3" autoplay="false" loop="true"></a-sound>
+		<a-image id="my_btn01" src="#img_play" position="4 0.2 -3" scale="0.3 0.3 0.3"></a-image>
+            
         </a-scene>
     </body>
 </html>
